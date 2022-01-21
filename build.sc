@@ -137,9 +137,9 @@ class chisel3CrossModule(val crossScalaVersion: String) extends CommonModule wit
 
     // a sbt-like testOnly command.
     // for example, mill -i "chisel3[2.12.12].test.testOnly" "chiselTests.BitwiseOpsSpec"
-    def testOnly(args: String*) = T.command {
-      super.runMain("org.scalatest.run", args: _*)
-    }
+    //def testOnly(args: String*) = T.command {
+    //  super.runMain("org.scalatest.run", args: _*)
+    //}
   }
 
   override def buildInfoPackageName = Some("chisel3")
